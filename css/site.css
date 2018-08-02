@@ -1,0 +1,19 @@
+﻿body
+{
+}
+
+main
+{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;    
+}
+
+section
+{
+    display: inline-block !important;
+    width: 80%;
+    height:400px ;
+    background-color: coral;
+}
