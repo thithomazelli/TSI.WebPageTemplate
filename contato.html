@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!-- Título do Site -->
+    <title>Serodio Turismo</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Google reCaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
+
+    <!--Navbar-->
+    <header class="fixed-top bg-dark">
+        <nav id="navBarHorizontal" class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand mt-3" href="#" title="Serodio - Turismo">
+                    <img src="images\logo.png" alt="Serodio - Turismo" id="imgLogo">
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-lg-right" id="navbarSite">
+                    <ul class="nav-menu nav nav-pills navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" href="index.html" title="Home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html#empresa" title="Empresa">EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html#servicos" title="Serviços">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html#galeria" title="Galeria">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contato" title="Contato">CONTATO</a>
+                        </li>
+                    </ul>
+                    <div class="linha-vertical d-none d-md-block"></div>
+                    <div class="text-Phones ">
+                        <img src="images/icos/Telefone.ico" class="icon" alt="Telefone" /> 
+                        <p class="card-text text-light text-small m-0">(11) 2469-9327</p>
+                        <img src="images/icos/Whatsapp.ico" class="icon mt-2" alt="WhatsApp" /> 
+                        <p class="card-text text-light text-small mt-2">
+                        <a href="https://web.whatsapp.com/send?phone=5511981802113&amp;text=Ol%C3%A1,%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" target="_blank" title="Fale conosco pelo WhatsApp">
+                            (11) 98180-2113
+                        </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulário de Contato -->
+        <section id="contato" class="container divCenter mb-5" >
+            <div class="col-12 my-5">
+                <h1 class="display-4 text-center titleContato">
+                    <i class="material-icons" style="font-size:48px"></i>
+                    <i class="material-icons" style="font-size:48px;">email</i>
+                    Contato
+                </h1>
+                <hr class="border-top border-warning col-8">
+                <p>Temos como obrigação servir nossos clientes da melhor forma, proporcionando a satisfação pelo investimento em seu conforto.</p>
+            </div>
+
+            <form class="container col-sm-12 col-md-10 col-lg-6 mb-4 text-left ">
+                <div id="alertInfo"class="alert alert-success collapse" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong id="alertStrong">Well done!</strong> <span id="alertSpan">You successfully read this important alert message.</span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputTelefone">Telefone</label>
+                        <input type="text" class="form-control" id="inputTelefone" placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" placeholder="Digite sua cidade">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEstado">Estado</label>
+                        <input type="text" class="form-control" id="inputEstado" placeholder="Digite seu estado">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputMensagem">Mensagem</label>
+                        <textarea name="mensagem" cols="44" rows="5" class="form-control" id="inputMensagem" placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha  float-md-left float-lg-left mb-2" 
+                         data-sitekey="6LdfEHsUAAAAAChwl16vJoYeyhIbHk-OmwovUQJW"
+                         data-callback="verifyCaptcha">
+                    </div>
+                    <button id="btn-Enviar" type="submit" disabled class="btn btn-secondary float-sm-left float-md-right float-lg-right mb-2">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row justify-content-sm-center">
+                <!-- Card Nav Menu -->
+                <nav class="nav-menu col-sm-12 col-md-12 col-lg-4 mt-3">
+                    <h6 class="text-light">MENU</h6>
+                    <a class="nav-link text-light text-small p-0 mt-2" href="index.html" title="Home">Home</a>
+                    <a class="nav-link text-light text-small p-0" href="index.html#empresa" title="Empresa">Empresa</a>
+                    <a class="nav-link text-light text-small p-0" href="index.html#servicos" title="Serviços">Serviços</a>
+                    <a class="nav-link text-light text-small p-0" href="index.html#galeria" title="Galeria">Galeria</a>
+                    <a class="nav-link text-light text-small p-0" href="#contato" title="Contato">Contato</a>
+                </nav>
+
+                <!-- Card Serodio Turismo -->
+                <div class="col-sm-12 col-md-12 col-lg-4 mt-3">
+                    <h6 class="text-light">Serodio Turismo</h6>
+                    <div class="card-body p-0">
+                        <p class="card-text text-light text-small m-0">Av. Quinze de Janeiro, nº 542</p>
+                        <p class="card-text text-light text-small m-0">Guarulhos - SP | CEP 04366-000</p>
+                    </div>
+                </div>
+
+                <!-- Card Atendimento -->
+                <div class="col-sm-12 col-md-12 col-lg-4 mt-3">
+                    <h6 class="text-light">Atendimento</h6>
+                    <div class="card-body p-0 mb-2">
+                        <img src="images/icos/Telefone.ico" class="icon" alt="Telefone" /> 
+                        <p class="card-text text-light text-small m-0">(11) 2469-9327</p>
+                    </div>
+                    <div class="text-Phones card-body p-0 mb-2">
+                        <img src="images/icos/Whatsapp.ico" class="icon" alt="WhatsApp" /> 
+                        <a class="card-text text-light text-small m-0" href="https://web.whatsapp.com/send?phone=5511981802113&amp;text=Ol%C3%A1,%20gostaria%20de%20tirar%20uma%20d%C3%BAvida!" target="_blank" title="Fale conosco pelo WhatsApp">
+                            (11) 98180-2113
+                        </a>
+                    </div>
+                    <div class="card-body p-0">
+                        <img src="images/icos/Email.ico"class="icon" alt="E-mail" /> 
+                        <p class="card-text text-light text-small m-0">warlen@serodioturismo.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+
+    <!-- Personal JavaScript -->
+    <script src="js/utility.js" ></script>
+</body>
+</html>
